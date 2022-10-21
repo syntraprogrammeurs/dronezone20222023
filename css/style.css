@@ -1,0 +1,124 @@
+html{
+    scroll-behavior: smooth;
+}
+/*FONTS*/
+@font-face {
+    font-family: pnl;
+    src: url('../webfonts/Proximanova_light.otf');
+}
+@font-face {
+    font-family: pnr;
+    src: url('../webfonts/Proximanova_regular.ttf');
+}
+@font-face {
+    font-family: pnb;
+    src: url('../webfonts/Proximanove_bold.otf');
+}
+.ff-l{
+    font-family: pnl;
+}
+.ff-r{
+    font-family: pnr;
+}
+.ff-b{
+    font-family: pnb;
+}
+.fs-xm{
+    font-size:0.875rem; /*14px;*/
+}
+.fs-sm{
+    font-size:1.125rem; /*18px;*/
+}
+.fs-lg{
+    font-size:2.250rem;/*36px;*/
+}
+.fs-xl{
+    font-size:3rem; /*48px;*/
+}
+/*HEADER*/
+#myheader{
+    background:url('../images/header.png') no-repeat top center;
+    /*  height:100vh;*/
+}
+/*NAVIGATION*/
+nav .nav-link{
+    border:1px solid transparent;
+    border-radius:45px;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    color:white;
+}
+/*.nav-link.active{
+    color:red !important;
+}*/
+nav .nav-link:hover{
+    border:1px solid white;
+    background:white;
+    color:red;
+}
+/*MAIN*/
+h3,h2{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnprice{
+    background:#274799;
+
+}
+#price{
+    background:#f6f6f6;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid grey;
+    color: #000;
+    font: 26px Arial, sans-serif;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+}
+.text-justify{
+    text-align: justify;
+}
+/*CONTACT SECTION*/
+.contact {
+    background: url('../images/Newsletter.png');
+    background-position: center;
+    background-size: 100% 100%;
+    padding-top:150px;
+    padding-bottom:150px;
+}
+
+input[type="email"] {
+    opacity: 0.5;
+    border: none;
+    border-radius: 20px;
+}
+#submitbutton {
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 0 15px;
+    border-radius: 20px;
+    margin-left: -50px;
+    color: #dc6900;}
+/*map section*/
+#map
+{
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+}
+
+/*media queries*/
+@media (min-width: 992px) {
+    #nature{
+        background: url('../images/dronebackground.png') no-repeat right center;
+    }
+
+}
